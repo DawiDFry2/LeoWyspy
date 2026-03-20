@@ -1,0 +1,79 @@
+<html>
+<head>
+<link rel="stylesheet" href="Leonardo.css" type="text/css">      
+</head>
+<body>
+<h1 align="center"><span style="color:gold">Leonardo Fibonacci</h1>
+<p></p>
+<p><span style=font-size:larger>Kim Był Leonardo Fibonacci?</span></p>
+<p></p>   
+<ol>
+<li>Fibonacci to włoski matematyk XIII wieku</li>
+<li>Urodzony w około 1175 r. w Pizie, umarł w 1250 r.</li>
+<li>Odkrył tak zwany “Ciąg Fibonacciego” zbiór liczb
+naturalnych zaczynający się 1,1,2,3,5…</li>
+<li>Odkrył również <span style="color:gold">złotą proporcję
+</li>
+</ol>
+<img width=150 src=Fibonacci.jpg style="border: solid gold">
+<span><-Obrazek Fibonacciego</span>
+<p></p>
+<p><span style=font-size:larger>Podróże i edukacja Fibonacciego:</span></p>
+<ol>
+<li>Dorastał w rodzinie kupieckiej, jego ojciec pracował w Afryce Północnej.</li>
+<li>Dzięki podróżom poznał system liczbowy świata arabskiego, dużo wygodniejszy od rzymskiego.</li>
+<li>Zaczął propagować arabskie cyfry (0-9) w Europie.</li>
+</ol>
+<p></p>
+<p><span style="font-size:larger">Na czym polega Ciąg Fibonacciego?</p>
+<p>Ciąg Fibonacciego to ciąg liczb, jego definicja to “Każda kolejna liczba jest sumą dwóch poprzednich z wyjątkiem dwóch pierwszych” co oznacza że liczby idą w kolejności <span style="color:gold">1,1,2,3,5,8,13,21,34,55,89…</span> i tak w nieskończoność</p>
+<h2 id="wynik">0</h2>
+<button onclick="Fib()">Liczby ciągu Fibonacciego wzrastające co kliknięcie</button>
+
+<script>
+let a = 0;
+let b = 1;
+
+function Fib() {
+  document.getElementById("wynik").textContent = a;
+
+  let temp = a;
+  a = b;
+  b = temp + b;
+}
+</script>
+<p></p>
+<p><span style="font-size:larger"> <span style="color:gold">Złota Proporcja/Boska Proporcja</p>
+<p>Nazywana również złotym podziałem, podziałem harmonicznym to
+podział odcinka na dwie części tak, by stosunek długości dłuższej z nich do krótszej był taki sam, jak całego odcinka do części dłuższej.
+</p>
+<img width=240 src=zlota.jpg style="border: solid gold">
+<p></p>
+<p><span style="font-size:larger">Gdzie można znaleźć <span style="color:gold">Złotą Proporcję?</p>
+<ol>
+<li>W naturze (np. muszle ślimaków, nasiona słonecznika)</li>
+<li>W ludzkim ciele (proporcje twarzy i dłoni)</li>
+<li>W architekturze (Partenon, piramidy)</li>
+<li>W sztuce (kompozycje obrazów, np. w historii sztuki)</li>
+<li>W muzyce, niektórzy kompozytorzy intuicyjnie wykorzystywali złoty podział w długościach fraz muzycznych</li>
+<li>Projekty graficzne, złota proporcja jest używana w projektowaniu stron internetowych i identyfikacji wizualnej, aby rozmieszczać elementy w estetyczny sposób.</li>
+</ol>
+<a href="index.html">Strona główna(powrót)</a>
+<p><p>
+<button onclick="zmien()">Kliknij aby zmienić kolor tła na czarny</button>
+<button onclick="zmien2()">Kliknij aby zmienić kolor tła spowrotem na zielony</button>
+<script>
+function zmien() {
+  document.body.style.backgroundColor = "black";
+  document.body.style.color = "white";
+}
+</script>
+<script>
+function zmien2() {
+  document.body.style.backgroundColor = "green";
+  document.body.style.color = "white";
+}
+</script>
+
+</body>
+</html>
